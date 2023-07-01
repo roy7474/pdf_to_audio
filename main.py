@@ -1,6 +1,7 @@
-import pyttsx3, pdfplumber
+import pyttsx3
+import PyPDF2
 
-pdfreader = pdfplumber(open('SA.pdf', 'rb'))
+pdfreader = PyPDF2.PdfReader(open('SA.pdf', 'rb'))
 
 # Initiate Speaker
 speaker = pyttsx3.init()
